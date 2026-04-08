@@ -6,7 +6,7 @@ services:
       # Том для сохранения итоговой модели (будет доступен на хосте)
       - /mnt/hdd_data/@named_volumes/distill/models:/models
       # Том для кэша Hugging Face (чтобы при повторном запуске не качать заново)
-      - /mnt/hdd_data/@named_volumes/distill/:/cache/huggingface
+      - /mnt/hdd_data/@named_volumes/distill/cache:/cache/huggingface
     environment:
       - HF_HOME=/cache/huggingface
     # Скрипт запустится и контейнер завершится
