@@ -37,4 +37,4 @@ def main():
     print(f"✅ Done. Vector dim: {len(test_vec)}")
 
 if __name__ == "__main__":
-    main(w)
+    main()
